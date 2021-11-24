@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso
 interface onUserListener{
     fun onClick(user : User)
 }
-class UserAdapter(private val listener : onUserListener): ListAdapter<User, UserAdapter.viewHolder>(UserItemCallBack()) {
+class UserAdapter(private val onUserClicked: (User) -> Unit): ListAdapter<User, UserAdapter.viewHolder>(UserItemCallBack()) {
 
     inner class viewHolder(val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -31,7 +31,7 @@ class UserAdapter(private val listener : onUserListener): ListAdapter<User, User
         Picasso.get().load(user.imageUrl).placeholder(R.drawable.ic_launcher_foreground).into(holder.binding.ivAvatar)
 
         holder.binding.root.setOnClickListener{
-            listener.onClick(user)
+            onUserClicked(user)
         }
     }
 }
