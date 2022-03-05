@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/tv_price"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="58dp"
+        android:layout_height="19dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/robomono"
         android:text="@string/tv_country"
@@ -39,4 +39,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_stock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/robomono"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        tools:text="no hay unidades" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

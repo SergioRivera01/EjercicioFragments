@@ -8,9 +8,9 @@
     tools:context=".UserDetailFragment">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_productD"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,94 +18,118 @@
 
     <TextView
         android:id="@+id/tv_label_name"
+        style="@style/LabelsTitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/robomono"
         android:text="@string/tv_label_name"
-        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_productD" />
 
     <TextView
         android:id="@+id/tv_label_price"
+        style="@style/LabelsTitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/robomono"
         android:text="@string/tv_label_country"
-        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_name"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_name" />
 
     <TextView
         android:id="@+id/tv_label_stock"
+        style="@style/LabelsTitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/robomono"
         android:text="@string/tv_label_gender"
-        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_price"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_price" />
 
     <TextView
         android:id="@+id/tv_label_avalible"
+        style="@style/LabelsTitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/robomono"
         android:text="@string/tv_label_location"
-        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_stock"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_stock" />
 
     <TextView
         android:id="@+id/tv_nameD"
+        style="@style/LabelsDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
-        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_label_name"
         app:layout_constraintTop_toTopOf="@+id/tv_label_name" />
 
     <TextView
         android:id="@+id/tv_priceD"
+        style="@style/LabelsDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
-        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_label_price"
         app:layout_constraintTop_toTopOf="@+id/tv_label_price" />
 
     <TextView
         android:id="@+id/tv_stockD"
+        style="@style/LabelsDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
-        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_label_stock"
         app:layout_constraintTop_toTopOf="@+id/tv_label_stock" />
 
     <TextView
         android:id="@+id/tv_avalibleD"
+        style="@style/LabelsDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
-        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_label_avalible"
         app:layout_constraintTop_toTopOf="@+id/tv_label_avalible" />
+
+    <TextView
+        android:id="@+id/tv_label_description"
+        style="@style/LabelsTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_label_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_avalible" />
+
+    <TextView
+        android:id="@+id/tv_descriptionD"
+        style="@style/LabelsDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_description"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_description" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_country">Le prix</string>
+    <string name="tv_name">Nom</string>
+    <string name="tv_label_name">Nom:</string>
+    <string name="tv_label_country">Le prix:</string>
+    <string name="tv_label_gender">Stock:</string>
+    <string name="tv_label_location">Disponible:</string>
+    <string name="app_name">Récupération</string>
+    <string name="tv_label_description">La description</string>
+</resources>

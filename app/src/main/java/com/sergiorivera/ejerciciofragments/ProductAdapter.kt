@@ -1,6 +1,7 @@
 package com.sergiorivera.ejerciciofragments
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -25,8 +26,16 @@ class ProductAdapter(private val onUserClicked: (Product) -> Unit): ListAdapter<
         val product = getItem(position)
 
         holder.binding.tvName.text = product.nombre
-        holder.binding.tvPrice.text = product.precio.toString()
+        holder.binding.tvPrice.text = product.precio.toString() + "€"
         holder.binding.ivProduct.setImageResource(product.imagen)
+
+        if(product.stock < 5){
+            holder.binding.tvStock.text = "HAY MENOS DE 5 UNIDADES"
+
+        }else{
+            holder.binding.tvStock.visibility = View.GONE
+
+        }
 
 
         holder.binding.root.setOnClickListener{
