@@ -10,6 +10,7 @@ import com.sergiorivera.ejerciciofragments.model.User
 import com.squareup.picasso.Picasso
 
 
+
 interface onUserListener{
     fun onClick(user : User)
 }

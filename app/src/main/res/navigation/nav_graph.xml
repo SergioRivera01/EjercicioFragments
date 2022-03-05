@@ -22,5 +22,8 @@
         <argument
             android:name="userId"
             app:argType="string" />
+        <argument android:name="userName" />
+        <argument android:name="userCountry" />
+        <argument android:name="userGender" />
     </fragment>
 </navigation>

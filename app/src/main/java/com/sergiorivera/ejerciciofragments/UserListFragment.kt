@@ -25,7 +25,7 @@ class UserListFragment : Fragment() {
         get() = _binding!!
 
     private val adapter: UserAdapter = UserAdapter {
-        val action = UserListFragmentDirections.actionUserListFragmentToUserDetailFragment(it.id)
+        val action = UserListFragmentDirections.actionUserListFragmentToUserDetailFragment(it.id, it.name, it.country, it.id)
         findNavController().navigate(action)
     }
 

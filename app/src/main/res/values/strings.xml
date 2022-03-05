@@ -3,4 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_detail">hello detail</string>
+    <string name="tv_country">Country</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_label_name">Name:</string>
+    <string name="tv_label_country">Country:</string>
+    <string name="tv_label_gender">Gender:</string>
+    <string name="tv_label_location">Location:</string>
 </resources>
