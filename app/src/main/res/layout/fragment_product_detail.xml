@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tv_label_country"
+        android:id="@+id/tv_label_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_label_name" />
 
     <TextView
-        android:id="@+id/tv_label_gender"
+        android:id="@+id/tv_label_stock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -50,11 +50,11 @@
         android:text="@string/tv_label_gender"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_country"
-        app:layout_constraintTop_toBottomOf="@+id/tv_label_country" />
+        app:layout_constraintStart_toStartOf="@+id/tv_label_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_price" />
 
     <TextView
-        android:id="@+id/tv_label_location"
+        android:id="@+id/tv_label_avalible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -62,8 +62,8 @@
         android:text="@string/tv_label_location"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_gender"
-        app:layout_constraintTop_toBottomOf="@+id/tv_label_gender" />
+        app:layout_constraintStart_toStartOf="@+id/tv_label_stock"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_stock" />
 
     <TextView
         android:id="@+id/tv_nameD"
@@ -77,35 +77,35 @@
         app:layout_constraintTop_toTopOf="@+id/tv_label_name" />
 
     <TextView
-        android:id="@+id/tv_countryD"
+        android:id="@+id/tv_priceD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_label_country"
-        app:layout_constraintTop_toTopOf="@+id/tv_label_country" />
+        app:layout_constraintStart_toEndOf="@+id/tv_label_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_price" />
 
     <TextView
-        android:id="@+id/tv_genderD"
+        android:id="@+id/tv_stockD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_label_gender"
-        app:layout_constraintTop_toTopOf="@+id/tv_label_gender" />
+        app:layout_constraintStart_toEndOf="@+id/tv_label_stock"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_stock" />
 
     <TextView
-        android:id="@+id/tv_locationD"
+        android:id="@+id/tv_avalibleD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/robomono"
         android:text="TextView"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_label_location"
-        app:layout_constraintTop_toTopOf="@+id/tv_label_location" />
+        app:layout_constraintStart_toEndOf="@+id/tv_label_avalible"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_avalible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="tv_country">País</string>
+    <string name="tv_country">Precio</string>
     <string name="tv_name">Nombre</string>
     <string name="tv_label_name">Nombre:</string>
-    <string name="tv_label_country">País:</string>
-    <string name="tv_label_gender">Género:</string>
-    <string name="tv_label_location">Ubicación:</string>
+    <string name="tv_label_country">Precio:</string>
+    <string name="tv_label_gender">Stock:</string>
+    <string name="tv_label_location">Disponible:</string>
 
 
 </resources>

@@ -7,17 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.navArgs
-import com.sergiorivera.ejerciciofragments.databinding.FragmentUserDetailBinding
-import com.sergiorivera.ejerciciofragments.model.User
+import com.sergiorivera.ejerciciofragments.databinding.FragmentProductDetailBinding
+import com.sergiorivera.ejerciciofragments.model.Product
 
 interface onUserDetail{
-    fun onClick(user : User)
+    fun onClick(producto: Product)
 }
 
 class UserDetailFragment : Fragment() {
 
 
-    private var _binding : FragmentUserDetailBinding? = null
+    private var _binding : FragmentProductDetailBinding? = null
     private val binding
         get() = _binding!!
 
@@ -27,15 +27,14 @@ class UserDetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentUserDetailBinding.inflate(inflater, container, false)
+        _binding = FragmentProductDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.tvNameD.text = args.userName
-        binding.tvCountryD.text = args.userCountry
-        binding.tvGenderD.text = args.userGender
-        Toast.makeText(context, "UserId: ${args.userId}", Toast.LENGTH_SHORT).show()
+        val producto : Product = products[args.id]
+        binding.tvNameD.text = producto.nombre
+       // Toast.makeText(context, "UserId: ${args.userId}", Toast.LENGTH_SHORT).show()
 
     }
     override fun onDestroy() {
