@@ -8,4 +8,5 @@
     <string name="tv_label_location">Available:</string>
     <string name="app_name">Recuperacion</string>
     <string name="tv_label_description">Description</string>
+    <string name="tv_stock">there are less than 5 units</string>
 </resources>

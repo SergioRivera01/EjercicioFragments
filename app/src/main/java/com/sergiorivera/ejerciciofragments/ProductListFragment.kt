@@ -39,6 +39,7 @@ class ProductListFragment : Fragment() {
         binding.rvUsers.layoutManager = GridLayoutManager(context, 2)
         binding.rvUsers.adapter = adapter
 
+        //Llamamos a la lista de productos
         adapter.submitList(products)
 
     }

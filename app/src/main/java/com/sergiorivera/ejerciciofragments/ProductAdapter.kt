@@ -25,10 +25,12 @@ class ProductAdapter(private val onUserClicked: (Product) -> Unit): ListAdapter<
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         val product = getItem(position)
 
+
         holder.binding.tvName.text = product.nombre
         holder.binding.tvPrice.text = product.precio.toString() + "€"
         holder.binding.ivProduct.setImageResource(product.imagen)
 
+        //Ponemos texto segun si hay menos de 5 unidades
         if(product.stock < 5){
             holder.binding.tvStock.text = "HAY MENOS DE 5 UNIDADES"
 

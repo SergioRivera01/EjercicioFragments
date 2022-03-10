@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import com.sergiorivera.ejerciciofragments.model.Product
 
 class App  : Application()  {
-
+    //Creamos la lista de productos
     val products: MutableList<Product> = mutableListOf(
         Product(0,"Manzana",5,20,"manzana roja",true, R.drawable.manzana),
         Product(1,"Platano",3,10,"Platano de canarias",false, R.drawable.platano),

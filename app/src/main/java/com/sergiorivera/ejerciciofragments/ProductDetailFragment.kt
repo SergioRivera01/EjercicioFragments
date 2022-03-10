@@ -32,15 +32,19 @@ class UserDetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //Llamamos a todos los campos y le asignamos su valores
         val producto : Product = products[args.id]
         binding.tvNameD.text = producto.nombre
         binding.tvPriceD.text = producto.precio.toString()
+
+        //Texto para ver si está o no disponible
         if (producto.disponible == false){
             binding.tvAvalibleD.text = "No"
         }else if(producto.disponible == true){
             binding.tvAvalibleD.visibility = View.GONE
             binding.tvLabelAvalible.visibility = View.GONE
         }
+
         binding.tvStockD.text = producto.stock.toString()
         binding.ivProductD.setImageResource(producto.imagen)
         binding.tvDescriptionD.text = producto.descripcion
